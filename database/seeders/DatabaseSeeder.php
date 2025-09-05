@@ -19,5 +19,7 @@ class DatabaseSeeder extends Seeder
             'name' => 'Test User',
             'email' => 'test@example.com',
         ]);
+
+        Resources::factory(50)->create(); // 50 random resources
     }
 }
